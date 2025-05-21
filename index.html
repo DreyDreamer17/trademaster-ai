@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="TradeMaster AI - Get daily AI-powered market insights delivered to your inbox">
+    <meta name="theme-color" content="#0f172a">
+    <meta property="og:title" content="TradeMaster AI - Daily Market Insights">
+    <meta property="og:description" content="Start receiving free, AI-generated market analysis every morning before the markets open.">
+    <meta property="og:image" content="logo (2).png">
+    <title>TradeMaster AI - Daily Market Insights</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="logo (2).png">
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/phosphor-icons"></script>
+    <link rel="stylesheet" href="https://unpkg.com/phosphor-icons/dist/phosphor-icons.css">
+    <!-- Fallback to Font Awesome if Phosphor doesn't load -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav container">
+            <a href="index.html" class="nav__logo-link">
+                <img src="logo (2).png" alt="TradeMaster AI Logo" class="nav__logo">
+            </a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <span class="hero__badge">
+                    <i class="ph ph-robot fa fa-robot"></i>
+                    AI-Powered Trading Insights
+                </span>
+                <h1 class="hero__title">Make Smarter Trading Decisions Daily.</h1>
+                <p class="hero__subtitle">Start receiving free, AI-generated market analysis every morning before the markets open.</p>
+
+                <form id="signup" action="https://formspree.io/f/xeogwjov" method="POST" class="signup-form">
+                    <div class="signup-form__fields">
+                        <input
+                            type="text"
+                            name="name"
+                            placeholder="Your Name"
+                            required
+                            class="signup-form__input"
+                            aria-label="Your name"
+                        >
+                        <input
+                            type="email"
+                            name="email"
+                            placeholder="Your Email Address"
+                            required
+                            class="signup-form__input"
+                            aria-label="Email address"
+                        >
+                        <select
+                            name="trading_experience"
+                            class="signup-form__select"
+                            aria-label="Trading experience"
+                        >
+                            <option value="" disabled selected>Trading Experience (Optional)</option>
+                            <option value="beginner">Beginner (< 1 year)</option>
+                            <option value="intermediate">Intermediate (1-3 years)</option>
+                            <option value="advanced">Advanced (3-5 years)</option>
+                            <option value="expert">Expert (5+ years)</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="signup-form__button">
+                        Get Daily Insights
+                        <i class="ph ph-arrow-right fa fa-arrow-right"></i>
+                    </button>
+                </form>
+
+                <div class="hero__disclaimer">
+                    <span><i class="ph ph-check-circle fa fa-check-circle"></i> Free for limited time</span>
+                    <span><i class="ph ph-prohibit fa fa-ban"></i> No spam</span>
+                    <span><i class="ph ph-arrow-counter-clockwise fa fa-undo"></i> Unsubscribe anytime</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="services">
+            <div class="container">
+                <h2 class="services__title">Comprehensive Market Intelligence</h2>
+                <p class="services__subtitle">Your daily digest includes in-depth analysis across multiple dimensions</p>
+
+                <div class="services__grid">
+                    <div class="service-card">
+                        <div class="service-card__icon">
+                            <i class="ph ph-chart-line fa fa-chart-line"></i>
+                        </div>
+                        <h3>Technical Analysis</h3>
+                        <ul class="service-card__list">
+                            <li><i class="ph ph-check-circle fa fa-check-circle"></i> Price action patterns & trends</li>
+                            <li><i class="ph ph-check-circle fa fa-check-circle"></i> Support & resistance levels</li>
+                            <li><i class="ph ph-check-circle fa fa-check-circle"></i> Key technical indicators</li>
+                            <li><i class="ph ph-check-circle fa fa-check-circle"></i> Chart pattern analysis</li>
+                        </ul>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-card__icon">
+                            <i class="ph ph-newspaper fa fa-newspaper"></i>
+                        </div>
+                        <h3>Fundamental Analysis</h3>
+                        <ul class="service-card__list">
+                            <li><i class="ph ph-check-circle fa fa-check-circle"></i> Economic indicators impact</li>
+                            <li><i class="ph ph-check-circle fa fa-check-circle"></i> Market sentiment analysis</li>
+                            <li><i class="ph ph-check-circle fa fa-check-circle"></i> Industry sector insights</li>
+                            <li><i class="ph ph-check-circle fa fa-check-circle"></i> Company performance metrics</li>
+                        </ul>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-card__icon">
+                            <i class="ph ph-globe fa fa-globe"></i>
+                        </div>
+                        <h3>News Analysis</h3>
+                        <ul class="service-card__list">
+                            <li><i class="ph ph-check-circle fa fa-check-circle"></i> Breaking market news</li>
+                            <li><i class="ph ph-check-circle fa fa-check-circle"></i> Economic events calendar</li>
+                            <li><i class="ph ph-check-circle fa fa-check-circle"></i> Policy changes impact</li>
+                            <li><i class="ph ph-check-circle fa fa-check-circle"></i> Global market trends</li>
+                        </ul>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-card__icon">
+                            <i class="ph ph-lightbulb fa fa-lightbulb"></i>
+                        </div>
+                        <h3>Trading Insights</h3>
+                        <ul class="service-card__list">
+                            <li><i class="ph ph-check-circle fa fa-check-circle"></i> Potential trade setups</li>
+                            <li><i class="ph ph-check-circle fa fa-check-circle"></i> Risk management advice</li>
+                            <li><i class="ph ph-check-circle fa fa-check-circle"></i> Market opportunity alerts</li>
+                            <li><i class="ph ph-check-circle fa fa-check-circle"></i> Position sizing guidance</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="services__note">
+                    <i class="ph ph-info fa fa-info-circle"></i>
+                    <p>All analyses are delivered before market open, giving you time to plan your trading day effectively.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="benefits">
+            <div class="container">
+                <h2 class="benefits__title">Why Choose TradeMaster AI?</h2>
+                <div class="benefits__grid">
+                    <div class="benefit">
+                        <div class="benefit__icon">
+                            <i class="ph ph-brain fa fa-brain"></i>
+                        </div>
+                        <h3>AI-Powered Analysis</h3>
+                        <p>Our advanced algorithms analyze market trends, patterns, and indicators to provide you with actionable insights you can trust.</p>
+                    </div>
+                    <div class="benefit">
+                        <div class="benefit__icon">
+                            <i class="ph ph-chart-line-up fa fa-chart-line"></i>
+                        </div>
+                        <h3>Daily Updates</h3>
+                        <p>Start your trading day right with fresh market analysis delivered to your inbox before the markets open.</p>
+                    </div>
+                    <div class="benefit">
+                        <div class="benefit__icon">
+                            <i class="ph ph-target fa fa-bullseye"></i>
+                        </div>
+                        <h3>Clear & Concise</h3>
+                        <p>Get straight to the point with clear, actionable insights. No fluff, just the information you need to make informed decisions.</p>
+                    </div>
+                    <div class="benefit">
+                        <div class="benefit__icon">
+                            <i class="ph ph-currency-circle-dollar fa fa-dollar-sign"></i>
+                        </div>
+                        <h3>Free Trial Access</h3>
+                        <p>Access premium-quality market insights at no cost during our limited-time offer. No credit card required, cancel anytime.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about">
+            <div class="container">
+                <h2 class="about__title">About Our Founder</h2>
+                <div class="about__content">
+                    <div class="about__profile">
+                        <div class="about__text">
+                            <h3>Stephen Ernest Nyangi</h3>
+                            <p class="about__role">Founder & Lead Market Analyst</p>
+                            <p class="about__description">
+                                With 2.5 years of dedicated trading experience, Stephen has developed a deep understanding of market dynamics and technical analysis. His journey from a passionate market enthusiast to a consistently profitable trader over the past year showcases his commitment to mastering the art of trading.
+                            </p>
+                            <p class="about__mission">
+                                Driven by a vision to democratize access to high-quality market insights, Stephen founded TradeMaster AI to combine his trading expertise with cutting-edge artificial intelligence. His approach focuses on identifying high-probability trading opportunities while maintaining strict risk management principles.
+                            </p>
+                            <div class="about__contact">
+                                <p><i class="ph ph-phone fa fa-phone"></i> Phone: <a href="tel:+255768220223">+255 768 220 223</a></p>
+                                <p><i class="ph ph-envelope fa fa-envelope"></i> Personal: <a href="mailto:stevetrades.mom@gmail.com">stevetrades.mom@gmail.com</a></p>
+                                <p><i class="ph ph-envelope-simple fa fa-envelope"></i> Service Inquiries: <a href="mailto:trad3master.journal@gmail.com">trad3master.journal@gmail.com</a></p>
+                            </div>
+                            <div class="about__achievements">
+                                <span><i class="ph ph-chart-line-up fa fa-chart-line"></i> Consistently Profitable Trader</span>
+                                <span><i class="ph ph-brain fa fa-brain"></i> AI Trading Integration Expert</span>
+                                <span><i class="ph ph-users fa fa-users"></i> Trading Community Leader</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 TradeMaster AI. All rights reserved.</p>
+            <div class="footer__links">
+                <a href="privacy.html">Privacy Policy</a>
+                <a href="terms.html">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/animations.js"></script>
+    <script src="js/form-handler.js"></script>
+</body>
+</html>
